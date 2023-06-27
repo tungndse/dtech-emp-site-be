@@ -46,7 +46,7 @@ public class EmployeeController {
     }
 
     /**
-     * Edit one employee(id)
+     * Edit an employee(id)
      */
     @PutMapping("/{id}")
     public Employee updateOne(@PathVariable Long id, @RequestBody Employee desiredEmployee) {
@@ -54,9 +54,9 @@ public class EmployeeController {
     }
 
     /**
-     * Delete one employee(id)
+     * Delete an employee(id)
      */
-    @DeleteMapping("{id")
+    @DeleteMapping("{id}")
     public void deleteOne(@PathVariable Long id) {
         empService.deleteEmployee(id);
     }
